@@ -1,7 +1,8 @@
 streamlit
-pymupdf
 openai
 langchain
+langchain-community
 faiss-cpu
+tiktoken
 python-dotenv
-langchain-community>=0.0.35
+PyMuPDF

@@ -3,7 +3,14 @@ load_dotenv()
 import openai
 import os
 
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+import streamlit as st
+
+api_key = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY")
+
+if not api_key:
+    raise ValueError("❌ OPENAI_API_KEY not found. Please set it in Streamlit Secrets or .env")
+
+client = openai.OpenAI(api_key=api_key)
 
 def summarize_text(text):
     prompt = (

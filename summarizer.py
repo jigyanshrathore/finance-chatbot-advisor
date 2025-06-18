@@ -1,5 +1,9 @@
 from dotenv import load_dotenv
-load_dotenv()
+import os
+
+# If running on Streamlit Cloud, get from secrets
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 import openai
 import os
 

@@ -1,0 +1,6 @@
+streamlit
+pymupdf
+openai
+langchain
+faiss-cpu
+python-dotenv

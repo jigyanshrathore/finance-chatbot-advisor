@@ -5,7 +5,11 @@ from qa_chain import answer_question
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+import os
+
+# If running on Streamlit Cloud, get from secrets
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 st.set_page_config(page_title="📊 Finance Report Analyzer", layout="wide")
 st.title("📊 Upload, Summarize & Chat with Financial Reports")

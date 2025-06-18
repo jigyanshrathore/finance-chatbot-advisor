@@ -4,3 +4,4 @@ openai
 langchain
 faiss-cpu
 python-dotenv
+langchain-community>=0.0.35

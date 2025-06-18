@@ -4,6 +4,8 @@ An AI-powered assistant that helps you summarize, analyze, and ask questions abo
 
 Built with Streamlit, LangChain, and OpenAI, this app turns large, complex financial documents into digestible insights for analysts, founders, and researchers.
 
+THE APP IS LIVE AT : https://finance-chatbot-advisor-molvjenzerq6tdzkq9kjvz.streamlit.app/
+
 
 🚀 Features
 📁 Upload: Upload PDF or text-based financial reports
@@ -19,10 +21,15 @@ Built with Streamlit, LangChain, and OpenAI, this app turns large, complex finan
 🛠️ Tech Stack
 Tech	Usage
 🧠 LangChain	QA Chain & Text Chunking
+
 🦜 OpenAI	GPT-3.5 for summarization & QA
+
 📊 FAISS	Embedding search engine
+
 🖼️ Streamlit	Interactive web frontend
+
 🧬 Tiktoken	Tokenizer for efficient chunking
+
 🔐 Dotenv	Local secret management
 
 
@@ -41,16 +48,10 @@ pip install -r requirements.txt
 3. Set up your OpenAI API key
 Create a .env file:
 
-env
-Copy
-Edit
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Or add it in Streamlit Secrets if deploying.
 
 4. Run the app
-bash
-Copy
-Edit
+
 streamlit run app.py
 ☁️ Deploy on Streamlit Cloud
 Push this project to a GitHub repo
@@ -61,9 +62,6 @@ Create a new app from the repo
 
 In the Secrets section of the app, add:
 
-toml
-Copy
-Edit
 OPENAI_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 📌 Sample Use Cases
 📈 Annual or quarterly financial report summarization

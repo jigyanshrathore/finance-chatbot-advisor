@@ -25,17 +25,7 @@ Tech	Usage
 🧬 Tiktoken	Tokenizer for efficient chunking
 🔐 Dotenv	Local secret management
 
-📂 Folder Structure
-bash
-Copy
-Edit
-finance-chatbot-advisor/
-│
-├── app.py               # Streamlit frontend app
-├── qa_chain.py          # QA logic (LangChain + OpenAI)
-├── summarizer.py        # Summarization function
-├── requirements.txt     # Required Python packages
-└── .env                 # API Key (excluded from Git)
+
 ▶️ Run Locally
 1. Clone the repository
 bash

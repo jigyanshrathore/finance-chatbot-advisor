@@ -7,7 +7,10 @@ from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
 from dotenv import load_dotenv
 
-load_dotenv()
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 def answer_question(question, full_text):
     # 1. Split the text into manageable chunks
